@@ -65,7 +65,19 @@ label {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
+    transition: 0.9;
 }
+
+label:active div {
+    transform: scale(0.9);
+    transition: 0.9;
+}
+
+label:hover div {
+   background-color: white;
+   transition: 0.9;
+ }
+
 
 .pointer_1,
 .pointer_2,
