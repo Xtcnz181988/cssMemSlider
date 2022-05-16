@@ -29,10 +29,15 @@ img {
 
 .wrapper_main {
     display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .wrapper_text {
     overflow: hidden;
+    margin-right: auto;
+    width: 70%;
 }
 
 .wrapper_title {
@@ -40,13 +45,12 @@ img {
 }
 
 .wrapper_control {
-    margin-left: auto;
     display: flex;
     align-items: center;
     gap: .5rem;
 }
 .text {
-    width: 100%;
+    width: 101%;
     font-family: 'WorkSans-SemiBold';
     flex-shrink: 0;
     line-height: 1.5rem;
@@ -115,7 +119,7 @@ label:hover div {
 }
 
 #checkbox_2:checked ~ .wrapper_main .wrapper_text .wrapper_title {
-    transform: translateX(-100%);
+    transform: translateX(-101%);
     transition: 0.7s linear;
 }
 
@@ -129,7 +133,7 @@ label:hover div {
 }
 
 #checkbox_3:checked ~ .wrapper_main .wrapper_text .wrapper_title {
-    transform: translateX(-200%);
+    transform: translateX(-202%);
     transition: 0.7s linear;
 }
 
@@ -143,16 +147,6 @@ label:hover div {
 }
 
 #checkbox_4:checked ~ .wrapper_main .wrapper_text .wrapper_title {
-    transform: translateX(-300%);
+    transform: translateX(-303%);
     transition: 0.7s linear;
-}
-
-@media screen and (max-width: 420px) {
-    .wrapper_main {
-        flex-direction: column-reverse;
-    }
-
-    .wrapper_control {
-        margin: 3% auto;
-    }
 }
